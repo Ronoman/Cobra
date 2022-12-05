@@ -2259,12 +2259,12 @@ def A12_8_6	#  (RI+) Copy and move constructors and copy assignment and move ass
 	# tbd
 end
 
-def A12_8_7	#  (AI+) Assignment operators should be declared with the ref-qualifier &.
+def A12_8_7	#  (AI+) Assignment operators should be declared with the ref-qualifier ampersand.
 	r
 	# constraint is placed on token after @key, so that the binding is in effect
 	pe class @ident { .* x:@key [= *= /= += -= %=] <1> ( .* ) ^&* { .* } } @1 (:x =="operator")
 	Select_Bound_Vars(A12_8_7, 16)
-	ps caption A12_8_7 (Advisory) Assignment operators should be declared with the ref-qualifier &.
+	ps caption A12_8_7 (Advisory) Assignment operators should be declared with the ref-qualifier ampersand.
 end
 
 def A13_1_1	#  (RI+) User-defined literals shall not be used.

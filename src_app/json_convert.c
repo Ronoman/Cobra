@@ -155,7 +155,7 @@ reformat(const int mode)
 		for (r = reports; r; r = r->nxt)
 		{	printf("<testsuite name=\"%s\">\n", r->nm);
 			printf(" <properties>\n");	// name/value pairs
-			printf("  <property name=\"cobra\" value=\"warning\">\n");
+			printf("  <property name=\"cobra\" value=\"warning\" />\n");
 			printf(" </properties>\n");
 			for (t = r->r; t; t = t->nxt)
 			{	printf(" <testcase name=\"match\">\n");
